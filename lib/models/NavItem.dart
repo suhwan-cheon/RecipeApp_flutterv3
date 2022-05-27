@@ -23,7 +23,7 @@ class NavItems extends ChangeNotifier {
   // By default first one is selected
   int selectedIndex = 0;
 
-  Future<void> changeNavIndex({required int index}) async {
+  void changeNavIndex({required int index}) {
     selectedIndex = index;
     // if any changes made it notify widgets that use the value
     notifyListeners();
